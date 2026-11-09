@@ -4,106 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Portafolio de Cristian Rivera, estudiante de Ingeniería Informática en Duoc UC.">
-  <meta name="theme-color" content="#201a14">
-  <title>Cristian Rivera · Portafolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#f5f5f1">
+  <title>Cristian Rivera | Portafolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page-frame">
-    <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="Cristian Rivera, volver al inicio">CR<span>.</span></a>
-      <nav aria-label="Navegación principal">
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-      <a class="header-link" href="https://github.com/kr1ssk" target="_blank" rel="noreferrer">GitHub ↗</a>
-    </header>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Cristian Rivera, inicio">CR</a>
+    <nav aria-label="Navegación principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="github-link" href="https://github.com/kr1ssk" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+  </header>
 
-    <main>
-      <section class="hero" id="inicio" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Estudiante · Duoc UC · Santiago, Chile</p>
-          <h1 id="hero-title">Aprendiendo a construir <em>la web.</em></h1>
-          <p class="intro">Hola, soy Cristian. Estudio Ingeniería Informática y me gusta crear sitios y aplicaciones que sean útiles, claros y fáciles de usar.</p>
-          <div class="hero-actions">
-            <a class="button button-dark" href="#proyectos">Conoce mis proyectos <span aria-hidden="true">↓</span></a>
-            <a class="quiet-link" href="#sobre-mi">Un poco sobre mí</a>
+  <main>
+    <section class="intro" id="inicio" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <p class="kicker">Estudiante de Ingeniería Informática · Duoc UC</p>
+        <h1 id="intro-title">Hola, soy<br> Cristian Rivera.</h1>
+        <p class="intro-text">Estoy aprendiendo desarrollo web y construyendo mis primeros proyectos. Aquí comparto algunos en los que he trabajado.</p>
+        <div class="intro-links">
+          <a class="button" href="#proyectos">Ver proyectos <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="https://github.com/kr1ssk" target="_blank" rel="noreferrer">Mi GitHub ↗</a>
+        </div>
+      </div>
+      <div class="intro-note" aria-label="Información de estudio">
+        <span class="note-label">Ahora mismo</span>
+        <p>Segundo año</p>
+        <p>Ingeniería Informática</p>
+        <p>Duoc UC · Santiago, Chile</p>
+      </div>
+    </section>
+
+    <section class="about section" id="sobre-mi" aria-labelledby="about-title">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <h2 id="about-title">Un poco sobre mí</h2>
+      </div>
+      <div class="about-body">
+        <p>Estudio Ingeniería Informática en Duoc UC. Me interesa el desarrollo web y cómo se conectan las páginas con los servicios que usan.</p>
+        <p>En mis proyectos he trabajado con HTML, CSS y JavaScript, y también estoy aprendiendo Java y Spring Boot.</p>
+      </div>
+    </section>
+
+    <section class="projects section" id="proyectos" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <span class="section-number">02</span>
+        <h2 id="projects-title">Proyectos</h2>
+      </div>
+      <p class="section-intro">Algunos trabajos que puedes revisar en GitHub.</p>
+      <div class="project-list">
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <p class="project-type">API REST · Java</p>
+            <h3>ToDoList</h3>
+            <p>Una API para administrar tareas. La desarrollé con Java y Spring Boot, conectada a una base de datos MySQL.</p>
+            <ul class="tags" aria-label="Tecnologías del proyecto ToDoList">
+              <li>Java</li><li>Spring Boot</li><li>MySQL</li>
+            </ul>
           </div>
-          <p class="course-note"><span class="status-dot" aria-hidden="true"></span> Aprendiendo desarrollo web y Fullstack 2</p>
-        </div>
-        <figure class="hero-art">
-          <div class="photo-frame">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Escritorio de trabajo con un computador y herramientas de desarrollo web">
+          <a class="project-link" href="https://github.com/kr1ssk/todolist" target="_blank" rel="noreferrer" aria-label="Ver ToDoList en GitHub">Ver en GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div class="project-content">
+            <p class="project-type">Sitio web · E-commerce</p>
+            <h3>E-commerce</h3>
+            <p>Un prototipo de tienda online en el que practico cómo organizar y presentar productos en una página.</p>
+            <ul class="tags" aria-label="Tecnologías del proyecto E-commerce">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
           </div>
-          <figcaption>Ideas, código y muchas tazas de café.</figcaption>
-          <span class="art-stamp" aria-hidden="true">EN<br>PROCESO</span>
-        </figure>
-        <span class="hero-index" aria-hidden="true">01 / PORTAFOLIO</span>
-      </section>
+          <a class="project-link" href="https://github.com/kr1ssk/ecommerce" target="_blank" rel="noreferrer" aria-label="Ver E-commerce en GitHub">Ver en GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
 
-      <section class="about section" id="sobre-mi" aria-labelledby="about-title">
-        <div class="section-marker"><span>01</span><span>Acerca de mí</span></div>
-        <div class="about-content">
-          <h2 id="about-title">Paso a paso, <em>con curiosidad.</em></h2>
-          <p>Voy en segundo año de Ingeniería Informática en Duoc UC. En este espacio comparto algunos proyectos web y lo que voy practicando en clases.</p>
-          <p>Me interesa aprender haciendo: probar una idea, escribir el código y mejorarla poco a poco.</p>
-          <div class="interests" aria-label="Temas que estoy aprendiendo">
-            <span>HTML y CSS</span><span>JavaScript</span><span>Desarrollo web</span><span>Git y GitHub</span>
-          </div>
-        </div>
-        <div class="about-aside">
-          <span class="aside-symbol" aria-hidden="true">✳</span>
-          <p>“Cada proyecto es una oportunidad para aprender algo nuevo.”</p>
-          <span class="aside-caption">— Mi forma de aprender</span>
-        </div>
-      </section>
+    <section class="contact section" id="contacto" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <span class="section-number">03</span>
+        <h2 id="contact-title">Contacto</h2>
+      </div>
+      <div class="contact-body">
+        <p>¿Quieres ver más de lo que estoy haciendo?</p>
+        <a class="button" href="https://github.com/kr1ssk" target="_blank" rel="noreferrer">Encuéntrame en GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
-      <section class="projects section" id="proyectos" aria-labelledby="projects-title">
-        <div class="section-marker"><span>02</span><span>Selección de trabajos</span></div>
-        <div class="projects-heading">
-          <div><p class="eyebrow">Pequeñas ideas en marcha</p><h2 id="projects-title">Proyectos <em>web.</em></h2></div>
-          <p>Una selección de trabajos de desarrollo web que he realizado y sigo mejorando.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-topline"><span>01 · Aplicación web</span><span aria-hidden="true">↗</span></div>
-            <div class="project-art todo-art" role="img" aria-label="Ilustración de una lista de tareas escrita en una libreta"><span class="note-check">✓</span><span class="note-lines"></span><span class="note-lines short"></span><span class="note-check second">✓</span><span class="note-lines third"></span></div>
-            <div class="project-details"><h3>ToDoList</h3><p>Una aplicación sencilla para anotar y organizar las tareas del día.</p><ul class="tags" aria-label="Tecnologías"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><a class="project-link" href="https://github.com/kr1ssk/todolist" target="_blank" rel="noreferrer">Ver proyecto en GitHub <span aria-hidden="true">↗</span></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-topline"><span>02 · Sitio web</span><span aria-hidden="true">↗</span></div>
-            <div class="project-art shop-art" role="img" aria-label="Ilustración de una tienda y sus productos"><span class="shop-mark">TIENDA<br><b>ONLINE</b></span><span class="shop-bag" aria-hidden="true">▱</span></div>
-            <div class="project-details"><h3>E-commerce prototipo</h3><p>Prototipo de catálogo web para presentar productos en una tienda online.</p><ul class="tags" aria-label="Tecnologías"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><a class="project-link" href="https://github.com/kr1ssk/ecommerce" target="_blank" rel="noreferrer">Ver proyecto en GitHub <span aria-hidden="true">↗</span></a></div>
-          </article>
-          <article class="project-card featured-card">
-            <div class="project-topline"><span>03 · Portafolio</span><span aria-hidden="true">↗</span></div>
-            <div class="project-art portfolio-art" role="img" aria-label="Ilustración de una página web en una pantalla"><span class="screen-top"></span><span class="screen-copy"></span><span class="screen-copy small"></span><span class="screen-button"></span></div>
-            <div class="project-details"><h3>Mi portafolio</h3><p>Este sitio personal, creado para mostrar quién soy y lo que estoy aprendiendo.</p><ul class="tags" aria-label="Tecnologías"><li>HTML5</li><li>CSS3</li><li>GitHub Pages</li></ul><a class="project-link" href="https://github.com/kr1ssk/kr1ssk.github.io" target="_blank" rel="noreferrer">Ver código en GitHub <span aria-hidden="true">↗</span></a></div>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact section" id="contacto" aria-labelledby="contact-title">
-        <div class="section-marker"><span>03</span><span>Contacto</span></div>
-        <div class="contact-content">
-          <p class="eyebrow">¿Conversamos?</p>
-          <h2 id="contact-title">Siempre hay espacio <em>para una buena idea.</em></h2>
-          <p>Si quieres conversar sobre un proyecto o saludar, puedes encontrarme en GitHub. ¡Gracias por visitar mi portafolio!</p>
-          <div class="contact-actions"><a class="button button-light" href="https://github.com/kr1ssk" target="_blank" rel="noreferrer">Visita mi perfil de GitHub <span aria-hidden="true">↗</span></a></div>
-        </div>
-        <div class="contact-seal" aria-hidden="true">CR</div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <a class="brand footer-brand" href="#inicio">CR<span>.</span></a>
-      <p>© 2026 Cristian Rivera · Portafolio personal</p>
-      <a href="#inicio">Volver al inicio ↑</a>
-    </footer>
-  </div>
+  <footer class="site-footer">
+    <span>© 2026 Cristian Rivera</span>
+    <span>Portafolio personal · 2026</span>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
 </body>
 </html>
