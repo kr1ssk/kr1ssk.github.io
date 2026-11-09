@@ -1,184 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristian Rivera | Portafolio Profesional</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio de Cristian Rivera, estudiante de Ingeniería Informática en Duoc UC.">
+  <meta name="theme-color" content="#201a14">
+  <title>Cristian Rivera · Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header / Navbar -->
-    <header class="header">
-        <div class="container nav-container">
-            <h1 class="logo"><span>C</span>ristian Rivera</h1>
-            <nav class="nav">
-                <a href="#sobre-mi">Sobre mí</a>
-                <a href="#cv">CV</a>
-                <a href="#portafolio">Portafolio</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
-        </div>
+  <div class="page-frame">
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Cristian Rivera, volver al inicio">CR<span>.</span></a>
+      <nav aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="header-link" href="https://github.com/kr1ssk" target="_blank" rel="noreferrer">GitHub ↗</a>
     </header>
 
-    <main class="main-content">
-        
-        <!-- Seccion de Bienvenida (Hero) -->
-        <section id="sobre-mi" class="hero-section">
-            <div class="container hero-content">
-                <h2>Ingeniería Informática & Desarrollo Fullstack</h2>
-                <p>Estudiante en Duoc UC con sólida base técnica industrial. Apasionado por la creación de soluciones web eficientes, automatización con Python y modelado 3D de activos digitales.</p>
-                <div class="hero-buttons">
-                    <a href="#portafolio" class="btn-primary">Ver Proyectos</a>
-                    <a href="#contacto" class="btn">Contáctame</a>
-                </div>
-            </div>
-        </section>
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Estudiante · Duoc UC · Santiago, Chile</p>
+          <h1 id="hero-title">Aprendiendo a construir <em>la web.</em></h1>
+          <p class="intro">Hola, soy Cristian. Estudio Ingeniería Informática y me gusta crear sitios y aplicaciones que sean útiles, claros y fáciles de usar.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#proyectos">Conoce mis proyectos <span aria-hidden="true">↓</span></a>
+            <a class="quiet-link" href="#sobre-mi">Un poco sobre mí</a>
+          </div>
+          <p class="course-note"><span class="status-dot" aria-hidden="true"></span> Aprendiendo desarrollo web y Fullstack 2</p>
+        </div>
+        <figure class="hero-art">
+          <div class="photo-frame">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Escritorio de trabajo con un computador y herramientas de desarrollo web">
+          </div>
+          <figcaption>Ideas, código y muchas tazas de café.</figcaption>
+          <span class="art-stamp" aria-hidden="true">EN<br>PROCESO</span>
+        </figure>
+        <span class="hero-index" aria-hidden="true">01 / PORTAFOLIO</span>
+      </section>
 
-        <!-- Seccion CV -->
-        <section id="cv" class="section">
-            <div class="container">
-                <h2 class="section-title">Currículum Vitae</h2>
-                
-                <!-- Educacion -->
-                <div class="card mb-4">
-                    <h3>📚 Educación</h3>
-                    <div class="cv-item">
-                        <p><strong>Instituto Profesional Duoc UC</strong> | Santiago, Chile</p>
-                        <p class="text-muted">Ingeniería Informática (Marzo 2025 - Actualidad)</p>
-                    </div>
-                    <div class="cv-item mt-3">
-                        <p><strong>Colegio Polivalente Domingo Matte Mesías</strong></p>
-                        <p class="text-muted">Enseñanza Media - Mecánico Industrial (Terminada en 2025)</p>
-                    </div>
-                </div>
+      <section class="about section" id="sobre-mi" aria-labelledby="about-title">
+        <div class="section-marker"><span>01</span><span>Acerca de mí</span></div>
+        <div class="about-content">
+          <h2 id="about-title">Paso a paso, <em>con curiosidad.</em></h2>
+          <p>Voy en segundo año de Ingeniería Informática en Duoc UC. En este espacio comparto algunos proyectos web y lo que voy practicando en clases.</p>
+          <p>Me interesa aprender haciendo: probar una idea, escribir el código y mejorarla poco a poco.</p>
+          <div class="interests" aria-label="Temas que estoy aprendiendo">
+            <span>HTML y CSS</span><span>JavaScript</span><span>Desarrollo web</span><span>Git y GitHub</span>
+          </div>
+        </div>
+        <div class="about-aside">
+          <span class="aside-symbol" aria-hidden="true">✳</span>
+          <p>“Cada proyecto es una oportunidad para aprender algo nuevo.”</p>
+          <span class="aside-caption">— Mi forma de aprender</span>
+        </div>
+      </section>
 
-                <!-- Experiencia Laboral -->
-                <div class="card mb-4">
-                    <h3>💼 Experiencia Laboral</h3>
-                    <div class="cv-item">
-                        <p><strong>PRT San Dámaso</strong> | Santa Rosa, Santiago, Chile</p>
-                        <p class="text-muted">Mecánico - Práctica Profesional (Diciembre 2024 - Marzo 2025)</p>
-                        <ul class="cv-list">
-                            <li>Inspecciones técnicas y visuales de vehículos livianos y pesados según la normativa vigente.</li>
-                            <li>Diagnóstico de fallas en sistemas de frenos, suspensión y dirección.</li>
-                            <li>Operación y calibración de equipos de diagnóstico (analizadores de gases, alineación y frenómetros).</li>
-                        </ul>
-                    </div>
-                </div>
+      <section class="projects section" id="proyectos" aria-labelledby="projects-title">
+        <div class="section-marker"><span>02</span><span>Selección de trabajos</span></div>
+        <div class="projects-heading">
+          <div><p class="eyebrow">Pequeñas ideas en marcha</p><h2 id="projects-title">Proyectos <em>web.</em></h2></div>
+          <p>Una selección de trabajos de desarrollo web que he realizado y sigo mejorando.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-topline"><span>01 · Aplicación web</span><span aria-hidden="true">↗</span></div>
+            <div class="project-art todo-art" role="img" aria-label="Ilustración de una lista de tareas escrita en una libreta"><span class="note-check">✓</span><span class="note-lines"></span><span class="note-lines short"></span><span class="note-check second">✓</span><span class="note-lines third"></span></div>
+            <div class="project-details"><h3>ToDoList</h3><p>Una aplicación sencilla para anotar y organizar las tareas del día.</p><ul class="tags" aria-label="Tecnologías"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><a class="project-link" href="https://github.com/kr1ssk/todolist" target="_blank" rel="noreferrer">Ver proyecto en GitHub <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span>02 · Sitio web</span><span aria-hidden="true">↗</span></div>
+            <div class="project-art shop-art" role="img" aria-label="Ilustración de una tienda y sus productos"><span class="shop-mark">TIENDA<br><b>ONLINE</b></span><span class="shop-bag" aria-hidden="true">▱</span></div>
+            <div class="project-details"><h3>E-commerce prototipo</h3><p>Prototipo de catálogo web para presentar productos en una tienda online.</p><ul class="tags" aria-label="Tecnologías"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><a class="project-link" href="https://github.com/kr1ssk/ecommerce" target="_blank" rel="noreferrer">Ver proyecto en GitHub <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card featured-card">
+            <div class="project-topline"><span>03 · Portafolio</span><span aria-hidden="true">↗</span></div>
+            <div class="project-art portfolio-art" role="img" aria-label="Ilustración de una página web en una pantalla"><span class="screen-top"></span><span class="screen-copy"></span><span class="screen-copy small"></span><span class="screen-button"></span></div>
+            <div class="project-details"><h3>Mi portafolio</h3><p>Este sitio personal, creado para mostrar quién soy y lo que estoy aprendiendo.</p><ul class="tags" aria-label="Tecnologías"><li>HTML5</li><li>CSS3</li><li>GitHub Pages</li></ul><a class="project-link" href="https://github.com/kr1ssk/kr1ssk.github.io" target="_blank" rel="noreferrer">Ver código en GitHub <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </section>
 
-                <!-- Habilidades y Certificaciones -->
-                <div class="card">
-                    <h3>🛠️ Habilidades y Certificaciones</h3>
-                    <div class="skills-grid">
-                        <div>
-                            <p><strong>Tecnologías & 3D:</strong></p>
-                            <div class="skill-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Blender</span>
-                                <span class="tag">Git / GitHub</span>
-                            </div>
-                            <p class="mt-3"><strong>Taller & Industrial:</strong> Mantenimiento Preventivo/Correctivo, Torno, Soldadura, Planos Mecánicos</p>
-                            <p class="mt-2"><strong>Idiomas:</strong> Inglés (Medianamente Fluido)</p>
-                        </div>
-                        <div>
-                            <p><strong>Certificaciones Oficiales:</strong></p>
-                            <ul class="cv-list">
-                                <li>Cisco Networking Academy's | Python Essentials 1</li>
-                                <li>Jóvenes Programadores | Introducción a Python</li>
-                                <li>Jóvenes Programadores | Introducción a la IA</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seccion Portafolio -->
-        <section id="portafolio" class="section bg-light">
-            <div class="container">
-                <h2 class="section-title">Portafolio de Proyectos</h2>
-                <div class="projects-grid">
-                    
-                    <!-- Proyecto 1: ToDoList -->
-                    <article class="project-card">
-                        <div class="project-info">
-                            <div class="project-header-tag">Fullstack App</div>
-                            <h3>ToDoList</h3>
-                            <p>Aplicación web diseñada para organizar y gestionar tareas diarias de manera eficiente y dinámica.</p>
-                            <div class="tech-stack">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/kr1ssk/todolist" target="_blank" class="btn-card">Ver en GitHub ↗</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Proyecto 2: E-commerce -->
-                    <article class="project-card">
-                        <div class="project-info">
-                            <div class="project-header-tag">Fullstack & Business</div>
-                            <h3>E-commerce Prototipo</h3>
-                            <p>Prototipo de plataforma web desarrollado para experimentar con modelos de negocio de e-commerce y dropshipping, enfocado en la gestión de catálogo y ventas.</p>
-                            <div class="tech-stack">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/kr1ssk/ecommerce" target="_blank" class="btn-card">Ver en GitHub ↗</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Proyecto 3: 3D Asset Creation -->
-                    <article class="project-card">
-                        <div class="project-info">
-                            <div class="project-header-tag">3D & UGC Assets</div>
-                            <h3>Diseño y Modelado 3D (Roblox UGC)</h3>
-                            <p>Creación, optimización de baja poligonización (low-poly), mapeado UV y texturizado de accesorios y complementos digitales.</p>
-                            <div class="tech-stack">
-                                <span>Blender</span>
-                                <span>Normal Baking</span>
-                                <span>Roblox Studio</span>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Seccion Contacto -->
-        <section id="contacto" class="section">
-            <div class="container">
-                <h2 class="section-title">Contacto</h2>
-                <div class="card contact-card">
-                    <p class="contact-desc">¿Tienes alguna pregunta, propuesta o quieres colaborar en un proyecto? ¡Hablemos!</p>
-                    <div class="contact-info-box">
-                        <p>📍 Puente Alto, Santiago, Chile</p>
-                        <p>📞 +56 9 9930 5801</p>
-                    </div>
-                    <div class="contact-social">
-                        <a href="https://github.com/kr1ssk" target="_blank" class="btn">GitHub</a>
-                        <a href="mailto:cristian.rivera21007@gmail.com" class="btn-primary">Enviar un Correo</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section class="contact section" id="contacto" aria-labelledby="contact-title">
+        <div class="section-marker"><span>03</span><span>Contacto</span></div>
+        <div class="contact-content">
+          <p class="eyebrow">¿Conversamos?</p>
+          <h2 id="contact-title">Siempre hay espacio <em>para una buena idea.</em></h2>
+          <p>Si quieres conversar sobre un proyecto o saludar, puedes encontrarme en GitHub. ¡Gracias por visitar mi portafolio!</p>
+          <div class="contact-actions"><a class="button button-light" href="https://github.com/kr1ssk" target="_blank" rel="noreferrer">Visita mi perfil de GitHub <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="contact-seal" aria-hidden="true">CR</div>
+      </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Cristian Rivera Hidalgo. Diseñado con HTML5 y CSS3.</p>
-        </div>
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio">CR<span>.</span></a>
+      <p>© 2026 Cristian Rivera · Portafolio personal</p>
+      <a href="#inicio">Volver al inicio ↑</a>
     </footer>
-
+  </div>
 </body>
 </html>
